@@ -73,7 +73,7 @@ function Drink_Function() {
 
 function Time_function() {
     var Time = new Date().getHours();
-    var Replay;
+    var Reply;
     if (Time < 12 == Time > 0) {
         Reply = "It is morning time!";
     }
@@ -83,8 +83,8 @@ function Time_function() {
     }
 
     else {
-        Replay = "It is evening time.";
+        Reply = "It is evening time.";
     }
-    document.getElementById("Time_of_day").innerHTML = Replay
+    document.getElementById("Time_of_day").innerHTML = Reply
 }
 
