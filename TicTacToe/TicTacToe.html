@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>La Vieja</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/game.css">
+	</head>
+	<body id="body">
+        <header>
+            <h1>Play La Vieja</h1>
+        </header>
+        <!-- This container is needed to overlay our canvas over our table-->
+		<div class = "center-container">
+            <!--NOTE: camvas width and height must ve within the element -->
+            <canvas id = "win-lines" width="608" height="608"></canvas>
+            <table>
+                <tr>
+                    <td id='0' onclick='placeXorO("0")'></td>
+                    <td id='1' onclick='placeXorO("1")'></td>
+                    <td id='2' onclick='placeXorO("2")'></td>
+                </tr>
+                <tr>
+                    <td id='3' onclick='placeXorO("3")'></td>
+                    <td id='4' onclick='placeXorO("4")'></td>
+                    <td id='5' onclick='placeXorO("5")'></td>
+                </tr>
+                <tr>
+                    <td id='6' onclick='placeXorO("6")'></td>
+                    <td id='7' onclick='placeXorO("7")'></td>
+                    <td id='8' onclick='placeXorO("8")'></td>
+                </tr>
+            </table>
+        </div>
+        <script src="js/tictactoe.js"></script>
+	</body>
+</html>
