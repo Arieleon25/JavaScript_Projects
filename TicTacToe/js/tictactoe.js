@@ -37,7 +37,7 @@ function placeXorO(squareNumber) {
         //This function plays placement sound
         audio('./media/place.mp3');
         //This condition checks to see if it is the computers turn
-        if (activePlayer === 'o') {
+        if (activePlayer === 'O') {
             //This function disables clicking for computers turn
             disableClick();
             //This function waits 1 second before the computer places an image and enabbles a click
