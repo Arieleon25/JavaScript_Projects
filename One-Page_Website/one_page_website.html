@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Anime Convention</title>
+		<meta charset="utf-8">
+		<link rel= "stylesheet" href="./css/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+	<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<nav>	
+					<ul class="menu">
+						<a href="#home" id="link"><li>HOME</li></a>
+						<a href="#gallery"><li>GALLERY</li></a>
+						<a href="#video"><li>VIDEO</li></a>
+						<a href="#contact" id="buy"><li>BUY TICKETS NOW</li></a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	<!-- END NAV -->
+	
+	<!-- HOME -->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Anime Convention</span>
+				</div>
+			</div>
+		</div>
+	<!-- END HOME -->		
+
+	<!-- GALLERY -->
+		<div id="gallery">
+			<h1>GALLERY</h1>	
+				<div class="flex-container">
+					<!-- PHOTO-CONTAINER 1-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_1.jpg" alt="JotaroVsDio">
+							<div class="photo-overlay" onclick="openModal();currentSlide(1)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Jotaro Vs Dio</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 1-->
+						
+					<!-- PHOTO-CONTAINER 2-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_2.png" alt="GokuUltraInstinct">
+							<div class="photo-overlay" onclick="openModal();currentSlide(2)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Goku Ultra Instinct</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 2-->
+						
+					<!-- PHOTO-CONTAINER 3-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_3.jpg" alt="Luffy">
+							<div class="photo-overlay" onclick="openModal();currentSlide(3)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Monkey D Luffy</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 3-->
+						
+					<!-- PHOTO-CONTAINER 4-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_4.jpg" alt="Naruto">
+							<div class="photo-overlay" onclick="openModal();currentSlide(4)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Naruto Uzumaki</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 4-->
+						
+					<!-- PHOTO-CONTAINER 5-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_5.jpg" alt="Eren">
+							<div class="photo-overlay" onclick="openModal();currentSlide(5)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Eren Yeager</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 5-->
+						
+					<!-- PHOTO-CONTAINER 6-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_6.jpg" alt="Thorfin">
+							<div class="photo-overlay" onclick="openModal();currentSlide(6)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Thorfin the Viking</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 6-->
+						
+					<!-- PHOTO-CONTAINER 7-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_7.jpg" alt="Denji">
+							<div class="photo-overlay" onclick="openModal();currentSlide(7)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Denji</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 7-->
+						
+					<!-- PHOTO-CONTAINER 8-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_8.jpg" alt="comiconphoto1">
+							<div class="photo-overlay" onclick="openModal();currentSlide(8)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Last year convention</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 8-->
+						
+					<!-- PHOTO-CONTAINER 9-->
+					<div class="photo-container">
+						<div class="photo">	
+							<img src="Images/Thumb/thumbnail_9.png" alt="comiconphoto2">
+							<div class="photo-overlay" onclick="openModal();currentSlide(9)"> 
+								<h2>Click to Enlarge</h2>
+								<p>Last year convention 2</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 9-->
+				</div>
+			<!-- JS enlarge option-->
+			<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+				
+					<div class="mySlides">
+						<div class="numbertext">1 / 9</div>
+						<img src="Images/Thumb/thumbnail_1.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+						<div class="numbertext">2 / 9</div>
+						<img src="Images/Thumb/thumbnail_2.png" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+						<div class="numbertext">3 / 9</div>
+						<img src="Images/Thumb/thumbnail_3.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">4 / 9</div>
+						<img src="Images/Thumb/thumbnail_4.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 9</div>
+						<img src="Images/Thumb/thumbnail_5.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 9</div>
+						<img src="Images/Thumb/thumbnail_6.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">7 / 9</div>
+						<img src="Images/Thumb/thumbnail_7.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">8 / 9</div>
+						<img src="Images/Thumb/thumbnail_8.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">9 / 9</div>
+						<img src="Images/Thumb/thumbnail_9.png" style="width:100%">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+				
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Jotaro Vs Dio">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Goku Ultra Instinct">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Monkey D Luffy">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Naruto Uzumaki">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Eren Yeager">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Thorfin the Viking">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Denji">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Last year convention">
+					</div>
+					<div class="column">
+						<img class="lightbox cursor" src="Images/Thumb/thumbnail_9.png" style="width:100%" onclick="currentSlide(9)" alt="Last year convention 2">
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- END GALLERY -->
+		
+
+
+	<!-- VIDEO -->
+		<div id="video">
+			<div class="flex-container-video">
+				<h1>Anime Convention in other countries!</h1>
+					<div class="video-container">
+						<div class="video">
+							<iframe width="640" height="360" src="https://www.youtube.com/embed/lH774xEkbBk"></iframe>
+						</div>
+					</div>
+			</div>
+		</div>
+	<!-- END VIDEO -->
+
+	
+	<!-- CONTACT -->
+		<div id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">GET YOUR TICKET TODAY!<h1>
+					<div class="reservation">
+						<h2><span>Don't miss the oportunity to meet the manga writers</span></h2><br>
+						<p class="rsvp-text"> Please provide your contact information</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="contact" type="text" value="First Name">
+								<input class="contact" type="text" value="Last Name">
+								<input class="contact" type="text" value="Phone">
+								<input class="contact" type="text" value="Home Address">
+								<input class="contact" type="text" value="Email">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- END CONTACT -->
+	<footer>
+		<div id="footer">
+			Boca Raton, Fl<br>
+			Arieleon25@yahoo.com
+		</div>
+	</footer>
+	</body>
+</html>
