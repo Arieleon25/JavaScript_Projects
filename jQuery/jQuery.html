@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Arie">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	</head>
+        <script>
+            $(document).ready(function(){
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p> \
+                                <p id='2'>Paragraph 2</p> \
+                                <p id='3'>Paragraph 3</p> \
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("#2").css({"color":"red"});
+                $("#3").click(function() {
+                    $('h1').hide();
+                });
+
+                //Created a jQuary effect to fade out 2 when 1 is clicked
+                $("#1").click(function() {
+                    $('#2').fadeOut("slow");
+                
+                });
+            });
+        </script>
+</html>
