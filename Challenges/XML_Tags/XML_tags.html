@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>XML TAGS</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Arie">
+	</head>
+	<body>
+		<header>
+			<h1>XML TAGS CHALLENGE</h1>
+		</header>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Movie = "<movie>" + "<title>Shindler\'s List</title>" + 
+                "<director>Steven Spelberg</director>" + "<starring>Liam Neeson</starring>" + 
+                "<year>1993</year>" + "</movie>";
+
+            //creates an XML DOM perser
+            XML_Parser = new DOMParser();
+
+            //Creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Movie,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("director")[0].childNodes[0].nodeValue;
+        </script>
+	</body>
+</html>

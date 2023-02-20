@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CHALLENGES</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="CSS/JS_Challenge.css">
+		<script src="JS/JS_Challenge.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	</head>
+	<body>
+	<script>
+		document.body.classList.add('fade-out');
+	</script>
+		<header>
+			<h1>JS CHALLENGES</h1>
+			<a href="#Ssroll">Click here to smooth scroll</a>
+			<p style="font-size: 8vw;">This is the VW challenge</p>
+		</header>
+		<div class="sticky">I will stick to the screen when you reach my scroll position</div>
+		<div>
+			<button class="button">Button</button>
+		</div>
+
+		<form action="/action_page.php" name="myForm" onsubmit="return validateForm()" method="post">
+			<label for ="phoneN">Phone number:</label><br>
+			<input type="text" id="phoneN" name="phoneN" value="Ex: (304) 105 1436">
+			<input type="submit" value="Submit">
+		</form>
+
+		<div>
+			<button class="open-button" onclick="openForm()">Open Form</button>
+
+			<div class="form-popup" id="myForm2">
+			<form action="/action_page.php" class="form-container">
+				<h1 class="PopTxtColor">Login</h1>
+
+				<label class="PopTxtColor" for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label class="PopTxtColor" for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button type="submit" class="btn">Login</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+			<div>
+				<h1> The @keyframe Rule</h1>
+				<div class="SQ"></div><br>
+			</div>
+			<div>
+				<img id="image1" src="Images/Img_1.png" width="40%" height="40%" class="Z-in"><br>
+			</div>
+			<div id="slideshow" class="Alfaslide">
+				<div class="Alfaslide">
+					<img src="Images/Alfa_1.JPG" width="100%" height="100%">
+				</div>
+				<div class="Alfaslide">
+					<img src="Images/Alfa_2.JPG" width="100%" height="100%">
+				</div>
+				<div class="Alfaslide">
+					<img src="Images/Alfa_3.JPG" width="100%" height="100%">
+				</div>
+			</div><br>
+			<div></div><br><br>
+				<h2 id="Ssroll">Smooth scroll</h2>
+			</div>
+			<div>
+				
+			</div>
+
+			<script>
+				$("slideshow > div:gt(0)").hide();
+
+				setInterval(function(){
+					$('#slideshow > div:first')
+					.fadeOut(1000)
+					.next()
+					.fadeIn(1000)
+					.end()
+					.appendTo('#slideshow');
+				}, 3000);
+			</script>
+		</div>
+	</body>
+</html>
